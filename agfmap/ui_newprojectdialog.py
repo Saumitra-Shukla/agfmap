@@ -1,0 +1,116 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'newprojectdialog.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_NewProjectDialog(object):
+    def setupUi(self, NewProjectDialog):
+        NewProjectDialog.setObjectName("NewProjectDialog")
+        NewProjectDialog.resize(620, 240)
+        self.formLayoutWidget = QtWidgets.QWidget(NewProjectDialog)
+        self.formLayoutWidget.setGeometry(QtCore.QRect(10, 10, 601, 221))
+        self.formLayoutWidget.setObjectName("formLayoutWidget")
+        self.formLayout = QtWidgets.QFormLayout(self.formLayoutWidget)
+        self.formLayout.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
+        self.formLayout.setFieldGrowthPolicy(QtWidgets.QFormLayout.AllNonFixedFieldsGrow)
+        self.formLayout.setContentsMargins(0, 0, 0, 0)
+        self.formLayout.setHorizontalSpacing(10)
+        self.formLayout.setVerticalSpacing(15)
+        self.formLayout.setObjectName("formLayout")
+        self.label_2 = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_2.setObjectName("label_2")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.projectNameEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.projectNameEdit.setMinimumSize(QtCore.QSize(0, 30))
+        self.projectNameEdit.setObjectName("projectNameEdit")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.projectNameEdit)
+        self.label = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label.setObjectName("label")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label)
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_4.setSpacing(10)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.projectPathEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.projectPathEdit.setMinimumSize(QtCore.QSize(0, 30))
+        self.projectPathEdit.setObjectName("projectPathEdit")
+        self.horizontalLayout_4.addWidget(self.projectPathEdit)
+        self.projectPathButton = QtWidgets.QPushButton(self.formLayoutWidget)
+        self.projectPathButton.setMinimumSize(QtCore.QSize(0, 30))
+        self.projectPathButton.setObjectName("projectPathButton")
+        self.horizontalLayout_4.addWidget(self.projectPathButton)
+        self.formLayout.setLayout(1, QtWidgets.QFormLayout.FieldRole, self.horizontalLayout_4)
+        self.label_3 = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_3.setObjectName("label_3")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_3)
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setSpacing(10)
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.imagePathEdit = QtWidgets.QLineEdit(self.formLayoutWidget)
+        self.imagePathEdit.setMinimumSize(QtCore.QSize(0, 30))
+        self.imagePathEdit.setObjectName("imagePathEdit")
+        self.horizontalLayout_5.addWidget(self.imagePathEdit)
+        self.imagePathButton = QtWidgets.QPushButton(self.formLayoutWidget)
+        self.imagePathButton.setMinimumSize(QtCore.QSize(0, 30))
+        self.imagePathButton.setObjectName("imagePathButton")
+        self.horizontalLayout_5.addWidget(self.imagePathButton)
+        self.formLayout.setLayout(2, QtWidgets.QFormLayout.FieldRole, self.horizontalLayout_5)
+        self.label_4 = QtWidgets.QLabel(self.formLayoutWidget)
+        self.label_4.setObjectName("label_4")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.label_4)
+        self.resolutionSpinBox = QtWidgets.QDoubleSpinBox(self.formLayoutWidget)
+        self.resolutionSpinBox.setMinimumSize(QtCore.QSize(0, 32))
+        self.resolutionSpinBox.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.resolutionSpinBox.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.resolutionSpinBox.setButtonSymbols(QtWidgets.QAbstractSpinBox.UpDownArrows)
+        self.resolutionSpinBox.setProperty("showGroupSeparator", False)
+        self.resolutionSpinBox.setPrefix("")
+        self.resolutionSpinBox.setMinimum(0.1)
+        self.resolutionSpinBox.setMaximum(500.0)
+        self.resolutionSpinBox.setProperty("value", 20.0)
+        self.resolutionSpinBox.setObjectName("resolutionSpinBox")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.FieldRole, self.resolutionSpinBox)
+        self.buttonBox = QtWidgets.QDialogButtonBox(self.formLayoutWidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(1)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.buttonBox.sizePolicy().hasHeightForWidth())
+        self.buttonBox.setSizePolicy(sizePolicy)
+        self.buttonBox.setMinimumSize(QtCore.QSize(0, 32))
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtWidgets.QDialogButtonBox.Cancel|QtWidgets.QDialogButtonBox.Ok)
+        self.buttonBox.setCenterButtons(False)
+        self.buttonBox.setObjectName("buttonBox")
+        self.formLayout.setWidget(4, QtWidgets.QFormLayout.FieldRole, self.buttonBox)
+
+        self.retranslateUi(NewProjectDialog)
+        self.buttonBox.accepted.connect(NewProjectDialog.accept)
+        self.buttonBox.rejected.connect(NewProjectDialog.reject)
+        QtCore.QMetaObject.connectSlotsByName(NewProjectDialog)
+
+    def retranslateUi(self, NewProjectDialog):
+        _translate = QtCore.QCoreApplication.translate
+        NewProjectDialog.setWindowTitle(_translate("NewProjectDialog", "Dialog"))
+        self.label_2.setText(_translate("NewProjectDialog", "Project name:"))
+        self.label.setText(_translate("NewProjectDialog", "Project path:"))
+        self.projectPathButton.setText(_translate("NewProjectDialog", "Examinar"))
+        self.label_3.setText(_translate("NewProjectDialog", "Input image:"))
+        self.imagePathButton.setText(_translate("NewProjectDialog", "Examinar"))
+        self.label_4.setText(_translate("NewProjectDialog", "Resolution:"))
+        self.resolutionSpinBox.setSuffix(_translate("NewProjectDialog", " px/m"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    NewProjectDialog = QtWidgets.QDialog()
+    ui = Ui_NewProjectDialog()
+    ui.setupUi(NewProjectDialog)
+    NewProjectDialog.show()
+    sys.exit(app.exec_())

@@ -1,0 +1,19 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+    <file>images/logo.png</file>
+    <file>images/new-project.png</file>
+    <file>images/open-project.png</file>
+    <file>images/save-project.png</file>
+    <file>images/settings.png</file>
+    <file>images/analyze-crop.png</file>
+    <file>images/delete.png</file>
+    <file>images/zoom-in.png</file>
+    <file>images/zoom-out.png</file>
+    <file>images/panel-view.png</file>
+    <file>images/show-shapes.png</file>
+    <file>images/set-roi.png</file>
+    <file>images/set-rows-dir.png</file>
+    <file>images/image-info.png</file>
+    <file>images/cursor-close.png</file>
+</qresource>
+</RCC>
